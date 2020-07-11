@@ -9,8 +9,8 @@ export class App extends React.Component {
       <div>
         <Router>
           <Switch>  
-          <Route path="/voting_page" component={Voting_page} />
-          <Redirect to="/voting_page"/>
+          <Route path="/" component={Voting_page} />
+          <Redirect to="/"/>
           </Switch>
         </Router>
         <br/>

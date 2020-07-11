@@ -24,7 +24,7 @@ class candidate_email extends React.Component {
     
 
     axios
-      .post("http://localhost:3050/candidate_register", {
+      .post("http://52.66.237.30:3051/candidate_register", {
         name: name,
         email: email,
         vote: vote
@@ -66,7 +66,7 @@ class candidate_email extends React.Component {
   }
 
   getState = () => {
-    axios.get("http://localhost:3050/result")
+    axios.get("http://52.66.237.30:3051/result")
     .then((data) => {
       // console.log(data, "data");
       this.setState( {
